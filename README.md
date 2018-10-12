@@ -2,7 +2,7 @@
 
 * Get the new version on: https://hub.docker.com/r/stefanesterer/docker-test-test/
 * create a new image mvn compile jib:build
-* run it docker run  -p 8083:8080 --link greeting-postgres:database stefanesterer/docker-test-test -d --rm
+* run it docker run -d -p 8083:8080 --link greeting-postgres:database stefanesterer/docker-test-test
 * Test it with for example httpie: http GET http://localhost:8083/greeting
 
 ## How to use postgres image
